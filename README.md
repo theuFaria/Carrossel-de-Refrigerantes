@@ -12,3 +12,4 @@ Um projeto meu de um carrosel de imagems de refrigerantes, com animações,  bot
 • CSS3
 
 • JavaScript
+
