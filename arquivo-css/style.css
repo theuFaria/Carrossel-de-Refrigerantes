@@ -140,13 +140,13 @@ img[title="Fanta Laranja"] {
 }
 img[title="Logo Fanta Laranja"] {
   top: -5%;
-  left: 33%;
+  left: 33.5%;
 }
 
 @media (max-width: 440px) {
   /* Coca cola */
  .imgFrente{
-  left: 8%;
+  left: 6%;
   top: 32%;
  }
  .containerCarrosel div:first-child img{
@@ -154,7 +154,7 @@ img[title="Logo Fanta Laranja"] {
  }
  /* Fanta */
  img[title="Logo Fanta Laranja"] {
-  top: -5%;
+  top: 3%;
   left: -1%;
   width:400px ;
 }
@@ -165,8 +165,8 @@ img[title="Fanta Laranja"]{
 /* guarana */
 
 img[title="logo guarana"] {
-left: -5%;
-top: -5%;
+left:0%;
+top: 5%;
 width: 430px;
 }
 img[title="Guarana"] {
