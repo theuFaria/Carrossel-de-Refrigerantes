@@ -138,7 +138,47 @@ img[title="Guarana"] {
 img[title="Fanta Laranja"] {
   margin-top: 55%;
 }
-img[title="logo fanta laranja"] {
+img[title="Logo Fanta Laranja"] {
   top: -5%;
   left: 33%;
+}
+
+@media (max-width: 440px) {
+  /* Coca cola */
+ .imgFrente{
+  left: 8%;
+  top: 32%;
+ }
+ .containerCarrosel div:first-child img{
+  width: 350px;
+ }
+ /* Fanta */
+ img[title="Logo Fanta Laranja"] {
+  top: -5%;
+  left: -1%;
+  width:400px ;
+}
+img[title="Fanta Laranja"]{
+  height: 450px;
+  width: auto;
+}
+/* guarana */
+
+img[title="logo guarana"] {
+left: -5%;
+top: -5%;
+width: 430px;
+}
+img[title="Guarana"] {
+  margin-top: 50%;
+}
+
+/* botões */
+#next{
+  right: 2%;
+}
+#prev{
+  left: 2%;
+}
+
 }
