@@ -12,3 +12,7 @@ Um projeto meu de um carrosel de imagems de refrigerantes, com animações,  bot
 • CSS3
 
 • JavaScript
+
+# De uma olhada:
+
+https://theufaria.github.io/Carrossel-de-Refrigerantes/
