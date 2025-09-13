@@ -1,16 +1,5 @@
-:root {
-  --corFanta: #fc8102;
-  --corGuarana: #638f38;
-  --vermelho: #f40009;
-  --corCoca: #111;
-}
-@font-face {
-  font-family: Poppins;
-  src: url(fontes/Poppins-Regular.ttf);
-}
 
 * {
-  font-family: Poppins;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,10 +14,6 @@
   display: block;
 }
 
-.corFundoAvela {
-  background-color: #594236;
-}
-
 .btns {
   width: 40px;
   height: 40px;
@@ -36,9 +21,10 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
-  transition: 0.3s all ease-in;
+  transition: 0.3s all;
   font-size: 26px;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .btns:hover {
@@ -66,13 +52,13 @@
   top: 50%;
 }
 .corGuarana {
-  background-color: var(--corGuarana);
+  background-color:  #638f38;
 }
 .corFanta {
-  background-color: var(--corFanta);
+  background-color: #fc8102;;
 }
 .corCoca {
-  background-color: var(--vermelho);
+  background-color: #f40009;
 }
 img {
   width: 500px;
@@ -147,7 +133,7 @@ img[title="Logo Fanta Laranja"] {
   /* Coca cola */
  .imgFrente{
   left: 6%;
-  top: 32%;
+  top: 35%;
  }
  .containerCarrosel div:first-child img{
   width: 350px;
@@ -165,12 +151,12 @@ img[title="Fanta Laranja"]{
 /* guarana */
 
 img[title="logo guarana"] {
-left:0%;
-top: 5%;
+left:-5%;
+top: -6%;
 width: 430px;
 }
 img[title="Guarana"] {
-  margin-top: 50%;
+  margin-top: 55%;
 }
 
 /* botões */
