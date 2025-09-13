@@ -1,0 +1,144 @@
+:root {
+  --corFanta: #fc8102;
+  --corGuarana: #638f38;
+  --vermelho: #f40009;
+  --corCoca: #111;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(fontes/Poppins-Regular.ttf);
+}
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  display: none;
+  font-size: 4rem;
+}
+
+.actived {
+  display: block;
+}
+
+.corFundoAvela {
+  background-color: #594236;
+}
+
+.btns {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: 0.3s all ease-in;
+  font-size: 26px;
+  border-radius: 50%;
+}
+
+.btns:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.containerCarrosel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all ease-in;
+  overflow: hidden;
+}
+
+#next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+#prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.corGuarana {
+  background-color: var(--corGuarana);
+}
+.corFanta {
+  background-color: var(--corFanta);
+}
+.corCoca {
+  background-color: var(--vermelho);
+}
+img {
+  width: 500px;
+}
+
+.containerCarrosel div:first-child img {
+  width: 800px;
+  + img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    animation: showUp;
+    animation-duration: 1s;
+    z-index: 0;
+  }
+}
+.imgFrente {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 2;
+}
+
+.showDown {
+  animation-name: showDown;
+  animation-duration: 1s;
+}
+.showUp {
+  animation-name: showUp;
+  animation-duration: 1s;
+}
+
+@keyframes showDown {
+  from {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes showUp {
+  from {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+img[title="logo guarana"] {
+  left: 33%;
+  top: -5%;
+}
+
+img[title="Guarana"] {
+  margin-top: 55%;
+}
+img[title="Fanta Laranja"] {
+  margin-top: 55%;
+}
+img[title="logo fanta laranja"] {
+  top: -5%;
+  left: 33%;
+}
