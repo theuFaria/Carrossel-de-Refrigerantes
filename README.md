@@ -3,7 +3,7 @@ Um projeto meu de um carrosel de imagems de refrigerantes, com animações,  bot
 # Funcionalides:
 • Responsividade a diferentes tamanhos de tela
 
-• Animações suaves que melhorar a experiência do usuário.
+• Animações suaves que melhoraram a experiência do usuário.
 
 • Botões de previous e next.
 # Tecnologias Usadas:
