@@ -13,3 +13,6 @@ Um projeto meu de um carrosel de imagems de refrigerantes, com animações,  bot
 
 • JavaScript
 
+# De uma olhada:
+
+https://theufaria.github.io/Carrossel-de-Refrigerantes/
