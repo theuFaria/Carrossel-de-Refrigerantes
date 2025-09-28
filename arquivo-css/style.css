@@ -1,8 +1,11 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
 }
 
 .title {
@@ -24,7 +27,7 @@
   transition: 0.3s all;
   font-size: 26px;
   border-radius: 50%;
-  z-index:20;
+  z-index: 20;
 }
 
 .btns:hover {
@@ -38,37 +41,44 @@
   justify-content: center;
   align-items: center;
   transition: 1s all ease-in;
-  overflow: hidden;
 }
 
 #next {
   position: absolute;
   right: 5%;
   top: 50%;
+  transform: translate(-5%, -50%);
   z-index: 20;
 }
+
 #prev {
   position: absolute;
   left: 5%;
   top: 50%;
+  transform: translate(-5%, -50%);
   z-index: 20;
 }
+
 .corGuarana {
-  background-color:  #638f38;
+  background-color: #638f38;
 }
+
 .corFanta {
-  background-color: #fc8102;;
+  background-color: #fc8102;
+  ;
 }
+
 .corCoca {
   background-color: #f40009;
 }
+
 img {
   width: 500px;
 }
 
 .containerCarrosel div:first-child img {
   width: 800px;
-  + img {
+  +img {
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -77,10 +87,12 @@ img {
     z-index: 0;
   }
 }
+
 .imgFrente {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -88,6 +100,7 @@ img {
   animation-name: showDown;
   animation-duration: 1s;
 }
+
 .showUp {
   animation-name: showUp;
   animation-duration: 1s;
@@ -95,14 +108,15 @@ img {
 
 @keyframes showDown {
   from {
-    transform: translateY(-150%);
-    opacity: 0;
+    transform: translate(-50%, -150%);
+
   }
+
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 }
+
 @keyframes showUp {
   from {
     transform: translateY(150%);
@@ -116,57 +130,56 @@ img {
 }
 
 img[title="logo guarana"] {
-  left: 33%;
-  top: -5%;
+  top: 30%;
 }
 
 img[title="Guarana"] {
-  margin-top: 55%;
+  margin-top: 40%;
 }
+
 img[title="Fanta Laranja"] {
-  margin-top: 55%;
+  margin-top: 30%;
 }
+
 img[title="Logo Fanta Laranja"] {
-  top: -5%;
-  left: 33.5%;
+  top: 30%;
 }
 
 @media (max-width: 440px) {
+
   /* Coca cola */
- .imgFrente{
-  left: 6%;
-  top: 35%;
- }
- .containerCarrosel div:first-child img{
-  width: 350px;
- }
- /* Fanta */
- img[title="Logo Fanta Laranja"] {
-  top: 3%;
-  left: -1%;
-  width:400px ;
-}
-img[title="Fanta Laranja"]{
-  height: 450px;
-  width: auto;
-}
-/* guarana */
+  .containerCarrosel div:first-child img {
+    width: 350px;
+  }
 
-img[title="logo guarana"] {
-left:-5%;
-top: -6%;
-width: 430px;
-}
-img[title="Guarana"] {
-  margin-top: 45%;
-}
+  /* Fanta */
+  img[title="Logo Fanta Laranja"] {
+    width: 400px;
+  }
 
-/* botões */
-#next{
-  right: 2%;
-}
-#prev{
-  left: 2%;
-}
+  img[title="Fanta Laranja"] {
+    height: 450px;
+    width: auto;
+  }
 
+  /* guarana */
+
+  img[title="logo guarana"] {
+    width: 430px;
+  }
+
+  img[title="Guarana"] {
+    margin-top: 45%;
+  }
+
+  /* botões */
+  #next {
+    right: 0%;
+    transform: translate(0, -50%);
+  }
+
+  #prev {
+    left: 0%;
+    transform: translate(0, -50%);
+  }
 }
